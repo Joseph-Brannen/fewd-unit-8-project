@@ -24,11 +24,13 @@ main {}
 /* EMPLOYEE DIV */
 .employee-card {}
 
-h2 {}
-
 .employee-card img {}
 
-.employee-card span {}
+h2 {}
+
+span .employee-email {}
+
+span .employee-city {}
 
 
 
@@ -41,5 +43,13 @@ h2 {}
 
 h3 {}
 
-.modal span {}
+span .modal-email {}
+
+span .modal-city {}
+
+span .modal-number {}
+
+span .modal-address {}
+
+span .modal-bday {}
 
