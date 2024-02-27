@@ -1,9 +1,14 @@
-* {}
+* {
+    box-sizing: border-box;
+}
 
 
 
 /*BODY*/
-body {}
+body {
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+}
 
 
 
@@ -33,6 +38,32 @@ span .employee-email {}
 span .employee-city {}
 
 
+/* EMPLOYEE COUNT */
+.employee-one {}
+
+.employee-two {}
+
+.employee-three {}
+
+.employee-four {}
+
+.employee-five {}
+
+.employee-six {}
+
+.employee-seven {}
+
+.employee-eight {}
+
+.employee-nine {}
+
+.employee-ten {}
+
+.employee-eleven {}
+
+.employee-twelve {}
+
+
 
 /* MODAL DIV */
 .modal {
@@ -52,4 +83,30 @@ span .modal-number {}
 span .modal-address {}
 
 span .modal-bday {}
+
+
+/* MOD COUNT */
+.mod-one {}
+
+.mod-two {}
+
+.mod-three {}
+
+.mod-four {}
+
+.mod-five {}
+
+.mod-six {}
+
+.mod-seven {}
+
+.mod-eight {}
+
+.mod-nine {}
+
+.mod-ten {}
+
+.mod-eleven {}
+
+.mod-twelve {}
 
