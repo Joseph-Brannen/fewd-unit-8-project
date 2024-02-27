@@ -7,31 +7,63 @@
 /*BODY*/
 body {
     margin: 0 auto;
+    background-color: rgb(243, 243, 243);
     font-family: "Open Sans", sans-serif;
 }
 
 
 
 /* HEADER */
-header {}
+header {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+}
 
-h1 {}
+h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
-input {}
+input {
+    width: 190px;
+    padding: .5rem;
+    border: 1.5px solid lightgray;
+    border-radius: 7px;
+    background-color: white;
+}
+
+input:focus {
+    border: 2px solid black;
+}
+
+input::placeholder {
+    color: rgb(199, 199, 199);
+    font-style: italic;
+}
 
 
 
 /* MAIN */
 main {}
 
+span {
+    font-size: 1rem;
+}
+
 
 
 /* EMPLOYEE DIV */
-.employee-card {}
+.employee-card {
+    background-color: white;
+}
 
 .employee-card img {}
 
-h2 {}
+h2 {
+    font-size: 1.3rem;
+}
 
 span .employee-email {}
 
@@ -68,6 +100,7 @@ span .employee-city {}
 /* MODAL DIV */
 .modal {
     display: none;
+    background-color: white;
 }
 
 .modal img {}
