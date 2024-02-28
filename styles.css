@@ -100,32 +100,6 @@ span .employee-city {
 }
 
 
-/* EMPLOYEE COUNT */
-.employee-one {}
-
-.employee-two {}
-
-.employee-three {}
-
-.employee-four {}
-
-.employee-five {}
-
-.employee-six {}
-
-.employee-seven {}
-
-.employee-eight {}
-
-.employee-nine {}
-
-.employee-ten {}
-
-.employee-eleven {}
-
-.employee-twelve {}
-
-
 
 /* MODAL DIV */
 .modal {
@@ -669,56 +643,6 @@ h2 {
 
 
 
-/* EMPLOYEE COUNT */
-.employee-one {
-    grid-area: one;
-}
-
-.employee-two {
-    grid-area: two;
-}
-
-.employee-three {
-    grid-area: three;
-}
-
-.employee-four {
-    grid-area: four;
-}
-
-.employee-five {
-    grid-area: five;
-}
-
-.employee-six {
-    grid-area: six;
-}
-
-.employee-seven {
-    grid-area: seven;
-}
-
-.employee-eight {
-    grid-area: eight;
-}
-
-.employee-nine {
-    grid-area: nine;
-}
-
-.employee-ten {
-    grid-area: ten;
-}
-
-.employee-eleven {
-    grid-area: eleven;
-}
-
-.employee-twelve {
-    grid-area: twelve;
-}
-
-
 
 /* MODAL DIV */
 .modal {}
@@ -762,4 +686,5 @@ span .modal-bday {}
 .mod-eleven {}
 
 .mod-twelve {}
+
 }
