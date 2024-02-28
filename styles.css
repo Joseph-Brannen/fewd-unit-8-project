@@ -1,3 +1,4 @@
+/*UNIVERSAL*/
 * {
     box-sizing: border-box;
 }
@@ -122,6 +123,7 @@ span .modal-address {}
 span .modal-bday {}
 
 
+
 /* MOD COUNT */
 .mod-one {}
 
@@ -151,50 +153,45 @@ span .modal-bday {}
 
 
 
-/* MEDIA QUERIES */
+/*/////////////////////////////////////////////////////////////////////////////
+///////////////////  MEDIA QUERIES   //////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////*/
+
+
+
 @media (min-width: 400px) and (max-width: 499px) {
-/* HEADER */
-header {
-    padding-bottom: 2rem;
-}
+    /* HEADER */
+    header {
+        padding-bottom: 2rem;
+    }
 
 
 
     /* MAIN */
-main {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
+    main {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 
-span {
-    font-size: 1rem;
-}
+    span {
+        font-size: 1rem;
+    }
 
 
 
-/* EMPLOYEE DIV */
-.employee-card {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 2rem;
-    grid-template-areas: 
-        "img name"
-        "img email"
-        "img city";
-    background-color: white;
-    padding: 1.5rem 1rem;
-    border: 1.5px solid lightgray;
-    border-radius: 7px;
-}
+    /* EMPLOYEE DIV */
+    .employee-card {
+        column-gap: 2rem;
+    }
 
-.employee-card img {
-    width: 100px;
-    height: 100px;
-}
+    .employee-card img {
+        width: 100px;
+        height: 100px;
+    }
 
-h2 {
-    font-size: 1.3rem;
-}
+    h2 {
+        font-size: 1.3rem;
+    }
 
 }
 
@@ -224,17 +221,7 @@ h2 {
     
     /* EMPLOYEE DIV */
     .employee-card {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
         column-gap: 4rem;
-        grid-template-areas: 
-            "img name"
-            "img email"
-            "img city";
-        background-color: white;
-        padding: 1.5rem 1rem;
-        border: 1.5px solid lightgray;
-        border-radius: 7px;
     }
     
     .employee-card img {
@@ -247,7 +234,7 @@ h2 {
         font-size: 1.35rem;
     }
     
-    }
+}
 
 
 
@@ -295,7 +282,7 @@ h2 {
         align-self: center;
     }
     
-    }
+}
 
 
 
@@ -343,162 +330,144 @@ h2 {
         align-self: center;
     }
     
-    }
+}
 
 
 
 
 
 @media (min-width: 768px) {
+    /* HEADER */
+    header {
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
-/* HEADER */
-header {
-    display: grid;
-    grid-template-columns: 2fr 1fr; 
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
+    h1 {
+        justify-self: start;
+        align-self: center;
+    }
 
-h1 {
-    justify-self: start;
-    align-self: center;
-}
-
-input {
-    justify-self: end;
-    align-self: center;
-}
-
-
-
-/* MAIN */
-main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-        "one seven"
-        "two eight"
-        "three nine"
-        "four ten"
-        "five eleven"
-        "six twelve";
-    gap: 2rem 4rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
+    input {
+        justify-self: end;
+        align-self: center;
+    }
 
 
 
-
-/* EMPLOYEE DIV */
-.employee-card {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
-        "img name"
-        "img email"
-        "img city";
-    background-color: white;
-    padding: 1.5rem 1rem;
-    border: 1.5px solid lightgray;
-    border-radius: 7px;
-}
-
-
-
-/* EMPLOYEE COUNT */
-.employee-one {
-    grid-area: one;
-}
-
-.employee-two {
-    grid-area: two;
-}
-
-.employee-three {
-    grid-area: three;
-}
-
-.employee-four {
-    grid-area: four;
-}
-
-.employee-five {
-    grid-area: five;
-}
-
-.employee-six {
-    grid-area: six;
-}
-
-.employee-seven {
-    grid-area: seven;
-}
-
-.employee-eight {
-    grid-area: eight;
-}
-
-.employee-nine {
-    grid-area: nine;
-}
-
-.employee-ten {
-    grid-area: ten;
-}
-
-.employee-eleven {
-    grid-area: eleven;
-}
-
-.employee-twelve {
-    grid-area: twelve;
-}
+    /* MAIN */
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "one seven"
+            "two eight"
+            "three nine"
+            "four ten"
+            "five eleven"
+            "six twelve";
+        gap: 2rem 4rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 
 
 
-/* MODAL DIV */
-.modal {}
+    /* EMPLOYEE COUNT */
+    .employee-one {
+        grid-area: one;
+    }
 
-.modal img {}
+    .employee-two {
+        grid-area: two;
+    }
 
-h3 {}
+    .employee-three {
+        grid-area: three;
+    }
 
-span .modal-email {}
+    .employee-four {
+        grid-area: four;
+    }
 
-span .modal-city {}
+    .employee-five {
+        grid-area: five;
+    }
 
-span .modal-number {}
+    .employee-six {
+        grid-area: six;
+    }
 
-span .modal-address {}
+    .employee-seven {
+        grid-area: seven;
+    }
 
-span .modal-bday {}
+    .employee-eight {
+        grid-area: eight;
+    }
+
+    .employee-nine {
+        grid-area: nine;
+    }
+
+    .employee-ten {
+        grid-area: ten;
+    }
+
+    .employee-eleven {
+        grid-area: eleven;
+    }
+
+    .employee-twelve {
+        grid-area: twelve;
+    }
 
 
-/* MOD COUNT */
-.mod-one {}
 
-.mod-two {}
+    /* MODAL DIV */
+    .modal {}
 
-.mod-three {}
+    .modal img {}
 
-.mod-four {}
+    h3 {}
 
-.mod-five {}
+    span .modal-email {}
 
-.mod-six {}
+    span .modal-city {}
 
-.mod-seven {}
+    span .modal-number {}
 
-.mod-eight {}
+    span .modal-address {}
 
-.mod-nine {}
+    span .modal-bday {}
 
-.mod-ten {}
 
-.mod-eleven {}
 
-.mod-twelve {}
+    /* MOD COUNT */
+    .mod-one {}
+
+    .mod-two {}
+
+    .mod-three {}
+
+    .mod-four {}
+
+    .mod-five {}
+
+    .mod-six {}
+
+    .mod-seven {}
+
+    .mod-eight {}
+
+    .mod-nine {}
+
+    .mod-ten {}
+
+    .mod-eleven {}
+
+    .mod-twelve {}
 }
 
 
@@ -557,134 +526,120 @@ span .modal-bday {}
 
 
 @media (min-width: 1400px) {
-/* HEADER */
-header {
-    display: grid;
-    grid-template-columns: 2fr 1fr; 
-    padding: 2rem 3rem;
-    margin-bottom: .25rem;
-}
+    /* HEADER */
+    header {
+        padding: 2rem 3rem;
+        margin-bottom: .25rem;
+    }
 
-h1 {
-    font-size: 1.5rem;
-}
+    h1 {
+        font-size: 1.5rem;
+    }
 
-input {
-    width: 250px;
-    height: 2.5rem;
-    font-size: 1rem;
-}
+    input {
+        width: 250px;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
 
-input::placeholder {
-    font-size: 1rem;
-}
-    
+    input::placeholder {
+        font-size: 1rem;
+    }
+        
 
 
-/* MAIN */
-main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-        "one five nine"
-        "two six ten"
-        "three seven eleven"
-        "four eight twelve";
-    gap: 2rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
+    /* MAIN */
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "one five nine"
+            "two six ten"
+            "three seven eleven"
+            "four eight twelve";
+        gap: 2rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
 
-span {
-    font-size: 1rem;
-}
-
-
-/* EMPLOYEE DIV */
-.employee-card {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 1.25rem;
-    grid-template-areas: 
-        "img name"
-        "img email"
-        "img city";
-    background-color: white;
-    padding: 2rem 1rem;
-    border: 2px solid lightgray;
-    border-radius: 10px;
-}
-
-.employee-card img {
-    grid-area: img;
-    align-self: center;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-left: 1rem;
-}
-
-h2, .employee-email, .employee-city {
-    padding-left: 1rem;
-}
-
-h2 {
-    font-size: 1.25rem;
-    align-self: end;
-}
-
-.employee-email {
-    align-self: center;
-}
-
-.employee-city {
-    align-self: start;
-}
+    span {
+        font-size: 1rem;
+    }
 
 
 
+    /* EMPLOYEE DIV */
+    .employee-card {
+        padding: 2rem 1rem;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+    }
 
-/* MODAL DIV */
-.modal {}
+    .employee-card img {
+        width: 120px;
+        height: 120px;
+        margin-left: 1rem;
+    }
 
-.modal img {}
+    h2, .employee-email, .employee-city {
+        padding-left: 1rem;
+    }
 
-h3 {}
+    h2 {
+        font-size: 1.25rem;
+        align-self: end;
+    }
 
-span .modal-email {}
+    .employee-email {
+        align-self: center;
+    }
 
-span .modal-city {}
-
-span .modal-number {}
-
-span .modal-address {}
-
-span .modal-bday {}
+    .employee-city {
+        align-self: start;
+    }
 
 
-/* MOD COUNT */
-.mod-one {}
 
-.mod-two {}
+    /* MODAL DIV */
+    .modal {}
 
-.mod-three {}
+    .modal img {}
 
-.mod-four {}
+    h3 {}
 
-.mod-five {}
+    span .modal-email {}
 
-.mod-six {}
+    span .modal-city {}
 
-.mod-seven {}
+    span .modal-number {}
 
-.mod-eight {}
+    span .modal-address {}
 
-.mod-nine {}
+    span .modal-bday {}
 
-.mod-ten {}
 
-.mod-eleven {}
 
-.mod-twelve {}
+    /* MOD COUNT */
+    .mod-one {}
 
+    .mod-two {}
+
+    .mod-three {}
+
+    .mod-four {}
+
+    .mod-five {}
+
+    .mod-six {}
+
+    .mod-seven {}
+
+    .mod-eight {}
+
+    .mod-nine {}
+
+    .mod-ten {}
+
+    .mod-eleven {}
+
+    .mod-twelve {}
 }
