@@ -61,7 +61,7 @@ span {
 
 
 /* EMPLOYEE DIV */
-.employee-card {
+.employee {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 
@@ -74,11 +74,11 @@ span {
     border-radius: 7px;
 }
 
-.employee-card:hover {
+.employee:hover {
     border: 2px solid black;
 }
 
-.employee-card img {
+.employee img {
     grid-area: img;
     align-self: center;
     width: 80px;
@@ -123,6 +123,14 @@ span .employee-city {
     font-size: .9rem;
 }
 
+.button {
+    justify-self: end;
+    padding: 1rem 1rem 0;
+    border: none;
+    background-color: white;
+    font-size: 1rem;    
+}
+
 #button-one, #button-two, #button-three, #button-four, #button-five, #button-six, #button-seven, #button-eight, #button-nine, #button-ten, #button-eleven, #button-twelve {
     justify-self: end;
     padding: 1rem 1rem 0;
@@ -150,33 +158,6 @@ h3 {
 .modal-number {
     padding-top: 1rem;
 }
-
-
-
-/* MOD COUNT */
-.mod-one {}
-
-.mod-two {}
-
-.mod-three {}
-
-.mod-four {}
-
-.mod-five {}
-
-.mod-six {}
-
-.mod-seven {}
-
-.mod-eight {}
-
-.mod-nine {}
-
-.mod-ten {}
-
-.mod-eleven {}
-
-.mod-twelve {}
 
 
 
@@ -209,11 +190,11 @@ h3 {
 
 
     /* EMPLOYEE DIV */
-    .employee-card {
+    .employee {
         column-gap: 2rem;
     }
 
-    .employee-card img {
+    .employee img {
         width: 100px;
         height: 100px;
     }
@@ -249,11 +230,11 @@ h3 {
     
     
     /* EMPLOYEE DIV */
-    .employee-card {
+    .employee {
         column-gap: 4rem;
     }
     
-    .employee-card img {
+    .employee img {
         width: 110px;
         height: 110px;
         justify-self: center;
@@ -290,13 +271,13 @@ h3 {
     
     
     /* EMPLOYEE DIV */
-    .employee-card {
+    .employee {
         column-gap: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
     
-    .employee-card img {
+    .employee img {
         width: 120px;
         height: 120px;
         justify-self: center;
@@ -338,13 +319,13 @@ h3 {
     
     
     /* EMPLOYEE DIV */
-    .employee-card {
+    .employee {
         column-gap: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
     
-    .employee-card img {
+    .employee img {
         width: 125px;
         height: 125px;
         justify-self: center;
@@ -404,51 +385,51 @@ h3 {
 
 
     /* EMPLOYEE COUNT */
-    .employee-one {
+    .employee:nth-of-type(1) {
         grid-area: one;
     }
 
-    .employee-two {
+    .employee:nth-of-type(2) {
         grid-area: two;
     }
 
-    .employee-three {
+    .employee:nth-of-type(3) {
         grid-area: three;
     }
 
-    .employee-four {
+    .employee:nth-of-type(4) {
         grid-area: four;
     }
 
-    .employee-five {
+    .employee:nth-of-type(5) {
         grid-area: five;
     }
 
-    .employee-six {
+    .employee:nth-of-type(6) {
         grid-area: six;
     }
 
-    .employee-seven {
+    .employee:nth-of-type(7) {
         grid-area: seven;
     }
 
-    .employee-eight {
+    .employee:nth-of-type(8) {
         grid-area: eight;
     }
 
-    .employee-nine {
+    .employee:nth-of-type(9) {
         grid-area: nine;
     }
 
-    .employee-ten {
+    .employee:nth-of-type(10) {
         grid-area: ten;
     }
 
-    .employee-eleven {
+    .employee:nth-of-type(11) {
         grid-area: eleven;
     }
 
-    .employee-twelve {
+    .employee:nth-of-type(12) {
         grid-area: twelve;
     }
 
@@ -462,48 +443,6 @@ h3 {
         left: 25%;
     }
 
-    .modal button {}
-
-    .modal img {}
-
-    h3 {}
-
-    span .modal-email {}
-
-    span .modal-city {}
-
-    span .modal-number {}
-
-    span .modal-address {}
-
-    span .modal-bday {}
-
-
-
-    /* MOD COUNT */
-    .mod-one {}
-
-    .mod-two {}
-
-    .mod-three {}
-
-    .mod-four {}
-
-    .mod-five {}
-
-    .mod-six {}
-
-    .mod-seven {}
-
-    .mod-eight {}
-
-    .mod-nine {}
-
-    .mod-ten {}
-
-    .mod-eleven {}
-
-    .mod-twelve {}
 }
 
 
@@ -519,11 +458,11 @@ h3 {
 
 
     /* EMPLOYEE DIV */
-    .employee-card {
+    .employee {
         column-gap: 2rem;
     }
     
-    .employee-card img {
+    .employee img {
         width: 100px;
         height: 100px;
         justify-self: center;
@@ -560,7 +499,7 @@ h3 {
 
 
     /* EMPLOYEE DIV */
-    .employee-card {
+    .employee {
         padding-left: 2rem;
         padding-right: 2rem;
         column-gap: 2rem;
@@ -625,13 +564,13 @@ h3 {
 
 
     /* EMPLOYEE DIV */
-    .employee-card {
+    .employee {
         padding: 2rem 1rem;
         border: 2px solid lightgray;
         border-radius: 10px;
     }
 
-    .employee-card img {
+    .employee img {
         width: 120px;
         height: 120px;
         margin-left: 1rem;
@@ -664,46 +603,4 @@ h3 {
         left: 30%;
     }
 
-    .modal button {}
-
-    .modal img {}
-
-    h3 {}
-
-    span .modal-email {}
-
-    span .modal-city {}
-
-    span .modal-number {}
-
-    span .modal-address {}
-
-    span .modal-bday {}
-
-
-
-    /* MOD COUNT */
-    .mod-one {}
-
-    .mod-two {}
-
-    .mod-three {}
-
-    .mod-four {}
-
-    .mod-five {}
-
-    .mod-six {}
-
-    .mod-seven {}
-
-    .mod-eight {}
-
-    .mod-nine {}
-
-    .mod-ten {}
-
-    .mod-eleven {}
-
-    .mod-twelve {}
 }
