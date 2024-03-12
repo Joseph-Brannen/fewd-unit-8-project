@@ -2,6 +2,7 @@
                 EVENT LISTENERS 
 /////////////////////////////////////////////// */
 const main = document.querySelector('main');
+const card = document.querySelector('.card');
 const employee = document.querySelectorAll('.employee');
 const modal = document.querySelector('.modal');
 const button = document.querySelector('.button');
@@ -56,7 +57,8 @@ function displayEmployees(employeeData) {
     `
     });
 
-    main.innerHTML = employeeHTML;
+    //main.innerHTML = employeeHTML;
+    card.innerHTML = employeeHTML;
 }
 
 
