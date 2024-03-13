@@ -116,13 +116,31 @@ span .employee-city {
 
 
 /* MODAL DIV */
-.modal {
+/*
+.container {
     position: fixed;
     top: 20%;
     left: 10%;
     right: 10%;
     z-index: 1;
     display: none;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    justify-items: center;
+    padding-bottom: 3rem;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    background-color: white;
+}
+*/
+
+.modal {
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    z-index: 1;
+    display: grid;
     grid-template-columns: 1fr;
     row-gap: 1rem;
     justify-items: center;
@@ -170,6 +188,10 @@ h3 {
 
 .modal-number {
     padding-top: 1rem;
+}
+
+.modal-address {
+    text-align: center;
 }
 
 
