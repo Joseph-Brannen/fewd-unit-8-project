@@ -47,15 +47,6 @@ input::placeholder {
 
 
 /* MAIN */
-/*
-main {
-    display: grid;
-    row-gap: 1rem;
-    margin-left: .5rem;
-    margin-right: .5rem;
-}
-*/
-
 span {
     font-size: .8rem;
 }
@@ -116,24 +107,6 @@ span .employee-city {
 
 
 /* MODAL DIV */
-/*
-.container {
-    position: fixed;
-    top: 20%;
-    left: 10%;
-    right: 10%;
-    z-index: 1;
-    display: none;
-    grid-template-columns: 1fr;
-    row-gap: 1rem;
-    justify-items: center;
-    padding-bottom: 3rem;
-    border: 2px solid lightgray;
-    border-radius: 10px;
-    background-color: white;
-}
-*/
-
 .modal {
     position: fixed;
     top: 20%;
@@ -160,14 +133,6 @@ span .employee-city {
     border: none;
     background-color: white;
     font-size: 1rem;    
-}
-
-#button-one, #button-two, #button-three, #button-four, #button-five, #button-six, #button-seven, #button-eight, #button-nine, #button-ten, #button-eleven, #button-twelve {
-    justify-self: end;
-    padding: 1rem 1rem 0;
-    border: none;
-    background-color: white;
-    font-size: 1rem;
 }
 
 .modal img {
@@ -213,13 +178,6 @@ h3 {
 
 
     /* MAIN */
-    /*
-    main {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    */
-
     span {
         font-size: .85rem;
     }
@@ -264,13 +222,6 @@ h3 {
 
 
     /* MAIN */
-    /*
-    main {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    */
-    
     span {
         font-size: .9rem;
     }
@@ -316,13 +267,6 @@ h3 {
  
  
     /* MAIN */
-    /*
-    main {
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
-    */
-    
     span {
         font-size: 1rem;
     }
@@ -375,13 +319,6 @@ h3 {
 
 
     /* MAIN */
-    /*
-    main {
-        margin-left: 4rem;
-        margin-right: 4rem;
-    }
-    */
-
     span {
         font-size: 1rem;
     }
@@ -443,25 +380,6 @@ h3 {
         justify-self: end;
         align-self: center;
     }
-
-
-
-    /* MAIN */
-    /*
-    main {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-            "one seven"
-            "two eight"
-            "three nine"
-            "four ten"
-            "five eleven"
-            "six twelve";
-        gap: 2rem 4rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    */
 
 
 
@@ -644,20 +562,6 @@ h3 {
 
 
     /* MAIN */
-    /*
-    main {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 
-            "one five nine"
-            "two six ten"
-            "three seven eleven"
-            "four eight twelve";
-        gap: 2rem;
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
-    */
-
     span {
         font-size: 1rem;
     }

@@ -1,6 +1,3 @@
-/* /////////////////////////////////////////////////////// 
-                EVENT LISTENERS 
-/////////////////////////////////////////////// */
 const main = document.querySelector('main');
 const card = document.querySelector('.card');
 const employee = document.querySelectorAll('.employee');
@@ -9,13 +6,9 @@ const modal = document.querySelector('.modal');
 const button = document.querySelector('.button');
 
 
-
-/* /////////////////////////////////////////////////////// 
-                FETCH API 
-/////////////////////////////////////////////// */
-
 const link = 'https://randomuser.me/api/?nat=us&results=12&inc=name,location,email,picture,phone,dob';
 let employees = [];
+
 
 fetch(link)
     .then( res => res.json() )
@@ -44,10 +37,8 @@ function displayEmployees(employeeData) {
     `
     });
 
-    //main.innerHTML = employeeHTML;
     card.innerHTML = employeeHTML;
 }
-
 
 
 function displayModal(index) {
@@ -87,6 +78,7 @@ main.addEventListener( 'click', e => {
 modContainer.addEventListener('click', () => {
     modContainer.style.display = 'none';
 });
+
 
 
 
