@@ -6,7 +6,7 @@ const modal = document.querySelector('.modal');
 const button = document.querySelector('.button');
 
 
-const link = 'https://randomuser.me/api/?nat=us&results=12&inc=name,location,email,picture,phone,dob';
+const link = 'https://randomuser.me/api/?nat=us&results=12&inc=name,location,email,picture,cell,dob';
 let employees = [];
 
 
@@ -43,7 +43,7 @@ function displayEmployees(employeeData) {
 
 function displayModal(index) {
 
-    let {name, dob, phone, email, location: {city, street, state, postcode}, picture } = employees[index];
+    let {name, dob, cell, email, location: {city, street, state, postcode}, picture } = employees[index];
 
     let date = new Date(dob.date);
 
@@ -54,7 +54,7 @@ function displayModal(index) {
             <h3>${name.first} ${name.last}</h3>
             <span class="modal-email">${email}</span>
             <span class="modal-city">${city}</span>
-            <span class="modal-number">${phone}</span>
+            <span class="modal-number">${cell}</span>
             <span class="modal-address">${street.number} ${street.name}, ${city}, ${state} ${postcode}</span>
             <span class="modal-bday">Birthday: ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</span>
         </div>
